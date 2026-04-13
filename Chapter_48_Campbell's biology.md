@@ -54,7 +54,7 @@ I-->M(motor neuron<br>cansing muscle<br>to contract)
 - 要是我在一杯氯化鉀溶液裡面植入一對電極，那麼離子會往與其電荷相反的電極跑去 (正離子跑向負極，反之)
 - 也就是說，我們可以理解成，離子會偏向 "中和電場" 的方向
 - 但是我們實際測量會發現，膜電位並不是0，原因就是因為，兩邊膜的離子濃度不一，濃度梯度產生的力量會促使$K^+$離子往濃度較低的方向跑過去
-- 同樣的邏輯也用在$Na^+$上
+- 同樣的邏輯也用在 $Na^+$ 上
 
 #### Nernst equation 
 ##### 公式主體
@@ -62,20 +62,19 @@ I-->M(motor neuron<br>cansing muscle<br>to contract)
 
 $$
 \begin{align}
-E_\text{ion} &=\frac{RT}{zF}\, \ln (\frac{[\text{ion}]_\text{out}}{[\text{ion}]_\text{in}})\\[0.6em]
-& \text{其中:}\\[0.6em]
+E_\text{ion} &=\frac{RT}{zF}\ \ln (\frac{[\text{ion}]_\text{out}}{[\text{ion}]_\text{in}})\text{，其中:}\\
 E & =\text{該離子造成的膜電位}\\
 z & =\text{離子電荷}\\
-R & =8.314\, J/mol\cdot K\\
+R & =8.314\ J/mol\cdot K\\
 T & =\text{絕對溫度}\\
-F & =\text{法拉第常數:}\, 96485\, C/mol
+F & =\text{法拉第常數:}\ 96485\ C/mol
 \end{align}
 $$
 
 - 我們可以基本將其簡化成:
 
 $$
-\boxed{E_\text{ion}=\frac{62}{z}\,\text{mV} (\log\frac{[\text{ion}]_\text{out}}{[\text{ion}]_\text{in}})}
+\boxed{E_\text{ion}=\frac{62}{z}\ \text{mV} (\log\frac{[\text{ion}]_\text{out}}{[\text{ion}]_\text{in}})}
 $$
 
 ##### 接下來我們來開始可怕的計算地獄吧... 🙂
@@ -92,13 +91,13 @@ $$
 - 如果該膜僅選擇性滲透鉀離子，那麼膜電位為:
 
 $$
-E_K = \frac{62}{+1}(\log\frac{5}{140})=-89.72\,\text{mV}
+E_K = \frac{62}{+1}(\log\frac{5}{140})=-89.72\ \text{mV}
 $$
 
 - 如果該膜僅選擇性滲透鉀離子，那麼膜電位為:
 
 $$
-E_{Na}= \frac{62}{+1}(\log\frac{150}{15})=+62\,\text{mV}
+E_{Na}= \frac{62}{+1}(\log\frac{150}{15})=+62\ \text{mV}
 $$
 
 - 由於膜上面同時有鉀離子跟鈉離子，所以我們可以推測，無論是在靜止膜電位、去極化、過極化，膜電位基本上都會在大約 -90mV跟+62mV 之間
@@ -125,15 +124,15 @@ $$
 
 $$
 \begin{align}
-& \text{膜內狀態:}\\[0.5em]
-& P_K[K^+]_\text{out} + P{Na}[Na^+]_\text{out} + P_{Cl}[Cl^-]_\text{in} \\[0.3em]
-& = (1.0)(5) + (0.04)(150) + (0.45)(10) \\[0.3em]
-& = 5 + 6 + 4.5 = 15.5\\[1em]
-& \text{膜外狀態:}\\[0.5em]
-& P_K[K^+]_\text{in} + P_{Na}[Na^+]_\text{in} + P_{Cl}[Cl^-]_\text{out} \\[0.3em]
-& = (1.0)(140) + (0.04)(15) + (0.45)(120) \\[0.3em]
-& = 140 + 0.6 + 54 = 194.6\\[1em]
-& \text{代回公式:}\\[0.5em]
+& \text{膜內狀態:}\\
+& P_K[K^+]_\text{out} + P{Na}[Na^+]_\text{out} + P_{Cl}[Cl^-]_\text{in} \\
+& = (1.0)(5) + (0.04)(150) + (0.45)(10) \\
+& = 5 + 6 + 4.5 = 15.5\\
+& \text{膜外狀態:}\\
+& P_K[K^+]_\text{in} + P_{Na}[Na^+]_\text{in} + P_{Cl}[Cl^-]_\text{out} \\
+& = (1.0)(140) + (0.04)(15) + (0.45)(120) \\
+& = 140 + 0.6 + 54 = 194.6\\
+& \text{代回公式:}\\
 & V_m = \frac{RT}{F} \ln (\frac{15.5}{194.6})
 \approx 26.7 \times -2.5301
 \approx \boxed{-67.55\text{mV}}
@@ -147,7 +146,7 @@ $$
 ##### 公式主體
 - 想要計算 "溶質從 $C_S$ 跑到 $C_E$ "，可用以下公式:
 
-$$\Delta G = RT \,\ln\frac{C_E}{C_S}+zF\Delta \psi$$
+$$\Delta G = RT \ \ln\frac{C_E}{C_S}+zF\Delta \psi$$
 
 - 此公式相當於 "運輸一莫耳的物質需要的能量"，並同時將濃度梯度跟電場梯度加起來
 - 此處的 $\Delta \psi$ 就是剛才計算的膜電位
@@ -164,18 +163,18 @@ $$\Delta G = RT \,\ln\frac{C_E}{C_S}+zF\Delta \psi$$
 
 $$
 \begin{align}
-\Delta G_{Na^+} & = RT \,\ln\frac{[Na^+]_E}{[Na^+]_S}+zF\Delta \psi\\[0.5em]
-& =8.314\times 310\,\text{K}\times (\ln\frac{0.150}{0.015}) + 1\times 96485\times (+0.068)\\[0.5em]
-& =5935+6561=12.496\,\text{kJ/mol}\\[1em]
-\Delta G_{K^+} & = RT \,\ln\frac{[K^+]_E}{[K^+]_S}+zF\Delta \psi\\[0.5em]
-& = 8.314\times 310\,\text{K}\times (\ln\frac{0.140}{0.005}) + 1\times 96485\times (- 0.068)\\[0.5em]
-& = 8588+(-6561)=2.027\,\text{kJ/mol}
+\Delta G_{Na^+} & = RT \ \ln\frac{[Na^+]_E}{[Na^+]_S}+zF\Delta \psi\\
+& =8.314\times 310\ \text{K}\times (\ln\frac{0.150}{0.015}) + 1\times 96485\times (+0.068)\\
+& =5935+6561=12.496\ \text{kJ/mol}\\
+\Delta G_{K^+} & = RT \ \ln\frac{[K^+]_E}{[K^+]_S}+zF\Delta \psi\\
+& = 8.314\times 310\ \text{K}\times (\ln\frac{0.140}{0.005}) + 1\times 96485\times (- 0.068)\\
+& = 8588+(-6561)=2.027\ \text{kJ/mol}
 \end{align}
 $$
 
 - 由於鈉鉀幫浦為 "3鈉出，2鉀進，使用1 ATP" ，因此我們可以推測每使用1 ATP，用來運輸的能量為:
 
-$$\Delta G_\text{total}=3\times 12.496 + 2\times 2.027= +41.542\,\text{kJ}$$
+$$\Delta G_\text{total}=3\times 12.496 + 2\times 2.027= +41.542\ \text{kJ}$$
 
 - 雖然ATP水解的自由能為$-30.5\,\text{kJ/mol}$，但是在身體的狀態條件下，為高 ATP/低 ADP的比例，這樣會讓反應更偏向釋放能量。因此ATP水解的實際自由能變化可以達到 $-50\, \text{kJ/mol}$
 - 由於 $50>41.542$ ，鈉鉀幫浦確實有辦法用一ATP就做到 "3鈉出，2鉀進" 的目標 🐱
