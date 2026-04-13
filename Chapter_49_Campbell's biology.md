@@ -86,7 +86,9 @@ classDef visceral fill:#ffe699,stroke:#d4ac0d,stroke-width:2px,color:#000
 - 自律神經系統 (autonomic nervous system)，控制平滑肌跟心肌
    - sympathetic division: 負責戰或逃反應 (fight-or-flight)，preganglionic neurons在突觸分泌acetylcholine，postganglionic neurons分泌norepinephrine
    - parasympathetic division: 負責休息跟消化 (rest-and-digest)，preganglionic neurons跟postganglionic neurons都是在突觸分泌acetylcholine
+  
 ![image alt](https://i.pinimg.com/originals/85/16/88/8516882e7a281c159fb8df80d9bfb726.jpg)
+
 - 腸神經系統 (enteric nervous system)，直接控制消化道、胰臟、或是膽囊的部分
 
 #### glial cells, or gila
@@ -198,8 +200,11 @@ classDef visceral fill:#ffe699,stroke:#d4ac0d,stroke-width:2px,color:#000
 - 額葉的損害可能影響決策能力以及情緒反應，但是不會妨礙記憶力跟智力，也就是說，額葉更重要的功能叫做 "執行" (就是CEO啦)
 - 經典翻車案例包含:
   - Phineas Gage (1848)，鐵棒意外穿過個體的額葉 (這人活下來也是奇蹟)，智力與基本感覺運動功能保留，但性格劇烈改變——變得衝動、粗魯、缺乏計劃性。該案例首次顯示額葉與人格、社會行為密切相關
+
 ![image alt](https://media.sciencephoto.com/image/n0250022/400wm/N0250022-Phineas_Gage_s_head_injury,_1848.jpg)
+  
   - lobotomy (1930~1950)，透過冰錐手術來切除額葉，當時用於治療精神疾病，患者焦慮或攻擊性減少，但同時失去情感深度、判斷力與自主性。後來被認為是過度破壞性的治療，逐漸被淘汰
+
 ![image alt](https://www.theparisreview.org/blog/wp-content/uploads/2017/04/lobotomy.jpg)
 
 #### 鳥類為甚麼這麼聰明? 🐥
