@@ -53,37 +53,62 @@ title: Chapter_47_Campbell's biology
 
 ```mermaid
 graph LR
-a(骨髓造血幹細胞<br>hematopoietic stem cell)
-a-->b[共同髓系母細胞]
-a-->c[共同淋巴母細胞]
+a(骨髓造血幹細胞<br>hematopoietic stem cell):::stem
+a-->b[共同髓系母細胞]:::myeloid
+a-->c[共同淋巴母細胞]:::lymphoid
 
-b-->d[紅血球母細胞]
-b-->e[巨核細胞]
-b-->f[肥大細胞，mast cell<br>過敏反應的來源]
-b-->g[成髓細胞]
-b-->h[單核球]
-b-->i[樹突細胞<br>抗原呈現]
+b-->d[紅血球母細胞]:::erythro
+b-->e[巨核細胞]:::megakaryo
+b-->f[肥大細胞，mast cell<br>過敏反應的來源]:::granulocyte
+b-->g[成髓細胞]:::granulocyte
+b-->h[單核球]:::monocyte
+b-->i[樹突細胞<br>抗原呈現]:::dendritic
 
-d-->s[紅血球<br>攜帶氧氣跟二氧化碳]
-e-->j[血小板<br>凝血作用]
+d-->s[紅血球<br>攜帶氧氣跟二氧化碳]:::erythrocyte
+e-->j[血小板<br>凝血作用]:::platelet
 
-g-->k[嗜酸性球<br>對抗真菌跟寄生蟲]
-g-->l[嗜鹼性球]
-g-->m[嗜中性球]
+g-->k[嗜酸性球<br>對抗真菌跟寄生蟲]:::eosinophil
+g-->l[嗜鹼性球]:::basophil
+g-->m[嗜中性球]:::neutrophil
 
-h-->n[巨噬細胞]
+h-->n[巨噬細胞]:::macrophage
 h-->i
 
-c-->A[淋巴母細胞<br>lymphoblast]
-c-->p[NK細胞<br>促使癌細胞凋亡]
-A-->q[T細胞<br>成熟於thymus]
-A-->r[B細胞<br>成熟於骨髓<br>產生抗體]
+c-->A[淋巴母細胞<br>lymphoblast]:::lymphoblast
+c-->p[NK細胞<br>促使癌細胞凋亡]:::nk
+A-->q[T細胞<br>成熟於thymus]:::tcell
+A-->r[B細胞<br>成熟於骨髓<br>產生抗體]:::bcell
 
 c-->i
 
-style a fill:#5ce1e6, stroke:#333
-style b fill:#faa2b8, stroke:#333
-style c fill:#86e55d, stroke:#333
+%% ========== 顏色定義 ==========
+%% 源頭 (🔴)
+classDef stem fill:#ffadad,stroke:#c0392b,stroke-width:3px,color:#000
+classDef myeloid fill:#ffd6d6,stroke:#e74c3c,stroke-width:2px,color:#000
+classDef lymphoid fill:#ffcccc,stroke:#e74c3c,stroke-width:2px,color:#000
+
+%% 紅血球系 (🟢)
+classDef erythro fill:#d6f5d6,stroke:#27ae60,stroke-width:2px,color:#000
+classDef erythrocyte fill:#a9dfbf,stroke:#1e8449,stroke-width:2px,color:#000
+classDef megakaryo fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#000
+classDef platelet fill:#b9f6ca,stroke:#00c853,stroke-width:2px,color:#000
+
+%% 顆粒球系 (🟡)
+classDef granulocyte fill:#fff0b5,stroke:#daa520,stroke-width:2px,color:#000
+classDef eosinophil fill:#ffe699,stroke:#d4ac0d,stroke-width:2px,color:#000
+classDef basophil fill:#ffd966,stroke:#e67e22,stroke-width:2px,color:#000
+classDef neutrophil fill:#ffcc80,stroke:#f39c12,stroke-width:2px,color:#000
+
+%% 單核球/巨噬細胞/樹突細胞系 (🔵)
+classDef monocyte fill:#d6eaff,stroke:#3498db,stroke-width:2px,color:#000
+classDef macrophage fill:#a8d8ff,stroke:#2980b9,stroke-width:2px,color:#000
+classDef dendritic fill:#7fb3d5,stroke:#1f4e79,stroke-width:2px,color:#000
+
+%% 淋巴系 (🟣)
+classDef lymphoblast fill:#e0d6ff,stroke:#8e44ad,stroke-width:2px,color:#000
+classDef nk fill:#d2b4de,stroke:#7d3c98,stroke-width:2px,color:#000
+classDef tcell fill:#c39bd3,stroke:#6c3483,stroke-width:2px,color:#000
+classDef bcell fill:#a569bd,stroke:#6c3483,stroke-width:2px,color:#fff
 ```
 #### 從骨髓造血細胞開始
 - 髓系母細胞產生紅血球、血小板、肥大細胞跟顆粒球
